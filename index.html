@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>蜗牛AI视频梦工厂 · P02 生活方式样片制片看板</title>
+<style>
+  :root{
+    --bg:#12100e; --card:#1d1a16; --card2:#25211b; --line:#383127;
+    --txt:#f0ece4; --sub:#a89f90; --accent:#e8a75c; --ok:#3ecf8e; --warn:#f5a623;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;padding:32px 4vw 80px}
+  h1{font-size:26px;margin-bottom:4px}
+  h2{font-size:19px;margin:40px 0 14px;padding-left:12px;border-left:4px solid var(--accent)}
+  .meta{color:var(--sub);font-size:13px;margin-bottom:24px}
+  .badges{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 6px}
+  .badge{background:var(--card2);border:1px solid var(--line);border-radius:20px;padding:3px 14px;font-size:12.5px;color:var(--sub)}
+  .badge.ok{color:var(--ok);border-color:rgba(62,207,142,.35)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .card .k{color:var(--sub);font-size:12.5px;margin-bottom:4px}
+  .card .v{font-size:17px;font-weight:600}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 16px;font-size:14px}
+  .step b{color:var(--ok);margin-right:6px}
+  .arrow{color:var(--sub)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px;margin-top:14px}
+  .ph{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:pointer;transition:transform .15s,border-color .15s}
+  .ph:hover{transform:translateY(-2px);border-color:var(--accent)}
+  .ph img{width:100%;display:block;aspect-ratio:1;object-fit:cover}
+  .ph .cap{padding:8px 10px;font-size:12.5px}
+  .ph .cap b{display:block;font-size:13px}
+  .ph .cap span{color:var(--sub)}
+  .ph.used{border-color:var(--accent)}
+  .tag{display:inline-block;font-size:11px;border-radius:4px;padding:1px 7px;margin-top:4px;background:rgba(232,167,92,.15);color:var(--accent)}
+  table{width:100%;border-collapse:collapse;margin-top:14px;font-size:13.5px;background:var(--card);border-radius:10px;overflow:hidden}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle}
+  th{background:var(--card2);color:var(--sub);font-weight:500;font-size:12.5px}
+  tr:last-child td{border-bottom:none}
+  td img{width:92px;border-radius:6px;display:block;cursor:pointer}
+  td img:hover{outline:2px solid var(--accent)}
+  .pill{font-size:11.5px;border-radius:12px;padding:2px 10px;white-space:nowrap}
+  .pill.ok{background:rgba(62,207,142,.14);color:var(--ok)}
+  video{width:100%;max-width:860px;display:block;border-radius:12px;margin-top:14px;background:#000}
+  .note{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:10px;padding:14px 18px;margin-top:14px;font-size:13.5px;color:var(--sub)}
+  .note b{color:var(--txt)}
+  .small{font-size:12.5px;color:var(--sub)}
+  #lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:99;align-items:center;justify-content:center;flex-direction:column;gap:14px;padding:30px}
+  #lb.on{display:flex}
+  #lb img{max-width:92vw;max-height:80vh;border-radius:8px}
+  #lb .lbcap{color:var(--sub);font-size:14px}
+  .footer{margin-top:48px;color:var(--sub);font-size:12.5px;text-align:center}
+</style>
+</head>
+<body>
+
+<h1>🛋️ 蜗牛AI视频梦工厂 · P02 生活方式样片 制片看板</h1>
+<div class="meta">AI 应用课教学演示 · AI 全流程制片实录 · 2026-10-07 · 产品：ASAKUKI 500ml 香薰扩散器（Amazon's Choice，月销 1 万+）</div>
+<div class="badges">
+  <span class="badge ok">✅ AI 全流程制作</span>
+  <span class="badge">31 秒 · 1080P</span>
+  <span class="badge">7 个分镜 · 全程英文字幕</span>
+  <span class="badge">治愈系氛围广告</span>
+  <span class="badge">7 张图零重出</span>
+</div>
+
+<div class="cards">
+  <div class="card"><div class="k">这条广告的风格</div><div class="v">生活方式+情绪风<br><span class="small">不喊卖点，只拍「用了之后生活多好」</span></div></div>
+  <div class="card"><div class="k">情绪主线</div><div class="v">回家的晚上<br>属于自己的一小时<br><span class="small">睡前/阅读/瑜伽三个生活片段</span></div></div>
+  <div class="card"><div class="k">和 P01 的区别</div><div class="v">P01 讲「它怎么用」<br>P02 讲「生活多好」<br><span class="small">软收尾 slogan，没有 Shop Now</span></div></div>
+  <div class="card"><div class="k">点下方视频 ▶</div><div class="v">有声 + 全程字幕<br><span class="small">所有图片点击可看大图</span></div></div>
+</div>
+
+<h2>🎥 成片先看（点播放，有声+字幕）</h2>
+<video controls preload="metadata" src="video.mp4"></video>
+
+<h2>⚙️ AI 制片流水线（7 道工序）</h2>
+<div class="flow">
+  <div class="step"><b>✅</b>选品+抓产品图<br><span class="small">Amazon 官图 12 张</span></div><span class="arrow">→</span>
+  <div class="step"><b>✅</b>AI 编剧「文澜」<br><span class="small">7镜 / 35s 设计 / 48词旁白</span></div><span class="arrow">→</span>
+  <div class="step"><b>✅</b>AI 提示词「词锋」<br><span class="small">人物一致性锁句技术</span></div><span class="arrow">→</span>
+  <div class="step"><b>✅</b>AI 出图<br><span class="small">7 张一次全过 · 零重出</span></div><span class="arrow">→</span>
+  <div class="step"><b>✅</b>AI 配音<br><span class="small">治愈系慢速英文女声</span></div><span class="arrow">→</span>
+  <div class="step"><b>✅</b>AI 出视频<br><span class="small">7 段图生视频</span></div><span class="arrow">→</span>
+  <div class="step"><b>✅</b>合成+字幕+混音<br><span class="small">镜间呼吸垫 · 31s 成片</span></div>
+</div>
+
+<h2>📷 原料：AI 从 Amazon 抓取的产品图（12 张，点击看大图）</h2>
+<div class="small" style="margin-top:6px">亮橙框 = 用作 AI 锚定参考图的 3 张——AI 照着它们画产品，保证每帧长得一样。</div>
+<div class="grid">
+  <div class="ph used" data-full="thumbs/listing_01.jpg"><img src="thumbs/listing_01.jpg" alt=""><div class="cap"><b>产品主图</b><span>→ 锚定「登场」镜</span></div></div>
+  <div class="ph used" data-full="thumbs/listing_03.jpg"><img src="thumbs/listing_03.jpg" alt=""><div class="cap"><b>床头场景图</b><span>→ 锚定「卧室遥控」镜</span></div></div>
+  <div class="ph used" data-full="thumbs/listing_05.jpg"><img src="thumbs/listing_05.jpg" alt=""><div class="cap"><b>客厅场景图</b><span>→ 锚定「阅读」镜</span></div></div>
+  <div class="ph" data-full="thumbs/listing_02.jpg"><img src="thumbs/listing_02.jpg" alt=""><div class="cap"><b>细节图</b><span>备选</span></div></div>
+  <div class="ph" data-full="thumbs/listing_04.jpg"><img src="thumbs/listing_04.jpg" alt=""><div class="cap"><b>细节图</b><span>备选</span></div></div>
+  <div class="ph" data-full="thumbs/listing_06.jpg"><img src="thumbs/listing_06.jpg" alt=""><div class="cap"><b>细节图</b><span>备选</span></div></div>
+  <div class="ph" data-full="thumbs/listing_07.jpg"><img src="thumbs/listing_07.jpg" alt=""><div class="cap"><b>场景图</b><span>备选</span></div></div>
+  <div class="ph" data-full="thumbs/listing_08.jpg"><img src="thumbs/listing_08.jpg" alt=""><div class="cap"><b>信息图</b><span>备选</span></div></div>
+  <div class="ph" data-full="thumbs/listing_09.jpg"><img src="thumbs/listing_09.jpg" alt=""><div class="cap"><b>细节图</b><span>备选</span></div></div>
+  <div class="ph" data-full="thumbs/listing_10.jpg"><img src="thumbs/listing_10.jpg" alt=""><div class="cap"><b>细节图</b><span>备选</span></div></div>
+  <div class="ph" data-full="thumbs/listing_11.jpg"><img src="thumbs/listing_11.jpg" alt=""><div class="cap"><b>细节图</b><span>备选</span></div></div>
+  <div class="ph" data-full="thumbs/listing_12.jpg"><img src="thumbs/listing_12.jpg" alt=""><div class="cap"><b>细节图</b><span>备选</span></div></div>
+</div>
+
+<h2>🎞️ 7 个分镜 × AI 生成的画面（点击看大图）</h2>
+<table>
+  <tr><th>#</th><th>画面</th><th>AI 生成图</th><th>英文旁白（=字幕）</th><th>时间</th></tr>
+  <tr><td>S1</td><td>傍晚回家·向往钩子</td><td><img src="thumbs/shot01_entry.jpg" data-full="thumbs/shot01_entry.jpg"></td><td>"Some evenings, all you want is one quiet hour."</td><td>0-6.9s</td></tr>
+  <tr><td>S2</td><td>客厅角落·产品已在工作</td><td><img src="thumbs/shot02_diffuser.jpg" data-full="thumbs/shot02_diffuser.jpg"></td><td>"It's already there, glowing softly."</td><td>6.9-11.8s</td></tr>
+  <tr><td>S3</td><td>卧室睡前·遥控关灯</td><td><img src="thumbs/shot03_bedroom.jpg" data-full="thumbs/shot03_bedroom.jpg"></td><td>"A warmer light, without leaving the bed."</td><td>11.8-15.6s</td></tr>
+  <tr><td>S4</td><td>沙发阅读·猫都没醒</td><td><img src="thumbs/shot04_reading.jpg" data-full="thumbs/shot04_reading.jpg"></td><td>"Quieter than a turning page."</td><td>15.6-19.1s</td></tr>
+  <tr><td>S5</td><td>瑜伽角落·深呼吸</td><td><img src="thumbs/shot05_yoga.jpg" data-full="thumbs/shot05_yoga.jpg"></td><td>"Just breathe."</td><td>19.1-22.0s</td></tr>
+  <tr><td>S6</td><td>情绪特写·满足微笑</td><td><img src="thumbs/shot06_emotion.jpg" data-full="thumbs/shot06_emotion.jpg"></td><td>"Five hundred milliliters, going all night."</td><td>22.0-27.5s</td></tr>
+  <tr><td>S7</td><td>全景定格·slogan 收尾</td><td><img src="thumbs/shot07_cta.jpg" data-full="thumbs/shot07_cta.jpg"></td><td>"Home feels like home again."</td><td>27.5-31.4s</td></tr>
+</table>
+<div class="small" style="margin-top:8px">💡 细节：S4「静音」卖点的拍法是「翻页声里猫都没醒」——不说是静音，让画面自己说。这就是生活方式风和 P01 硬核演示风的区别。</div>
+
+<h2>🎭 AI 怎么保证「同一个人」出现在 6 个镜头里？</h2>
+<div class="note">每条提示词都重复注入同一段「人物锁句」：<b>三十岁出头的亚裔女性、深棕低马尾、米白针织家居服</b>——AI 生成时照着这句话对齐长相和穿着。产品同理：每条都写「白色穹顶机身+暖木纹底座」，并用真实产品图锚定防止走样。</div>
+
+<h2>🐛 这次的翻车数：0</h2>
+<div class="note">P01 首跑翻车 3 次（产品走样/符号吃字/调色参数错），教训全部变成铁律带入 P02：<b>①产品图必须真图锚定 ②字幕渲染参数固化 ③渲染脚本模板化</b>。结果：7 张图一次全过，7 段视频零重出，全程零翻车——这就是把踩坑沉淀成流程的价值。</div>
+
+<h2>💰 制作成本</h2>
+<table>
+  <tr><th>项目</th><th>用量</th><th>成本</th></tr>
+  <tr><td>AI 生成图片</td><td>7 张（零重出）</td><td>≈ ¥2-5</td></tr>
+  <tr><td>AI 生成视频</td><td>7 段 720P</td><td>≈ ¥10-15</td></tr>
+  <tr><td>AI 配音</td><td>48 词英文女声</td><td>≈ ¥0.04</td></tr>
+  <tr><td>剪辑合成</td><td>全自动脚本渲染</td><td>¥0</td></tr>
+</table>
+
+<div class="footer">蜗牛AI · 视频梦工厂 · 本页面由 AI 制片流程自动生成 · 教学演示用（产品素材来自 Amazon 公开 listing，仅作内部训练演示，非商业投放）</div>
+
+<div id="lb"><img id="lbimg" src="" alt=""><div class="lbcap">点击任意处关闭</div></div>
+<script>
+function lbOn(src){document.getElementById('lbimg').src=src;document.getElementById('lb').classList.add('on');}
+function lbOff(){document.getElementById('lb').classList.remove('on');}
+document.querySelectorAll('[data-full]').forEach(function(el){
+  el.addEventListener('click',function(){lbOn(el.getAttribute('data-full'));});
+});
+document.getElementById('lb').addEventListener('click',lbOff);
+</script>
+</body>
+</html>
